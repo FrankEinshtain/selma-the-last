@@ -8,6 +8,7 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
+site_url: 'https://selma-the-last.netlify.app/'
 publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
@@ -34,6 +35,7 @@ collections:
       - file: 'src/pages/index.md'
         label: 'Landing Page'
         name: 'index'
+        preview_path: '/preview-home'
         fields:
           - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
           - { label: Title, name: title, widget: string }
